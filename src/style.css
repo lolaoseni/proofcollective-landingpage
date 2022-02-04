@@ -1,0 +1,133 @@
+:root {
+    --text-opacity: 1;
+    --bg-opacity: 1;
+    --font-inter: 'Inter', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+    --text-sm: .875rem;
+    --text-xl: 1.25rem;
+    --text-4xl: 2.25rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.body {
+    width: 100vw;
+    min-height: 100vh;
+    font-family: var(--font-poppins);
+    font-weight: 300;
+    line-height: inherit;
+    background-color: rgb(8, 8, calc(13 / var(--bg-opacity)));
+    color: rgb(165, 180, calc(252 / var(--text-opacity)));
+}
+
+.access-link__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .access-link__div {
+        justify-content: flex-end;
+    }
+}
+
+.access-link {
+    padding: 1rem 1.5rem;
+    font-size: var(--text-sm);
+    line-height: 14px;
+    text-decoration: none;
+    border-radius: 50px;
+    color: rgb(255 255 255);
+    background-color: rgb(99 102 241);
+}
+
+.header-section {
+    position: relative;
+    width: 75%;
+    max-width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 9rem;
+    padding-bottom: 4rem;
+}
+
+.header__logo {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.header__para {
+    margin-top: 4rem;
+    font-family: var(--font-inter);
+    font-size: var(--text-xl);
+    line-height: 2;
+    text-align: center;
+    color: rgb(255 255 255);
+}
+
+.main-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.proof-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.proof-image-div {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.proof-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.proof-image--pass {
+    transform: scaleX(1);
+    transform: scaleY(1);
+    transform: rotate(-16deg);
+}
+
+.proof-image--shadow {
+    position: relative;
+    z-index: -1;
+    left: -2.5rem;
+}
+
+.proof-text-div {
+    padding-bottom: 6rem;
+    text-align: center;
+}
+
+.sub__heading {
+    font-size: var(--text-4xl);
+    line-height: 2.5rem;
+    font-weight: bolder;
+    color: rgb(255 255 255);
+}
+
+.proof-para {
+    margin-top: 1rem;
+    line-height: 1.625;
+}
+
+.opensea-link {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: var(--text-sm);
+    color: rgb(0 0 0);
+}
